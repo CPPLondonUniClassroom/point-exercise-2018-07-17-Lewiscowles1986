@@ -12,16 +12,16 @@ bool operator==(const point& lhs, const point& rhs)
 
 bool operator!=(const point& lhs, const point& rhs)
 {
-  return !(lhs == rhs);
+    return !(lhs == rhs);
 }
 
 point operator+(const point& lhs, const point& rhs)
 {
-  return point {lhs.x + rhs.x, lhs.y + rhs.y};
+    return point {lhs.x + rhs.x, lhs.y + rhs.y};
 }
 point operator-(const point& lhs, const point& rhs)
 {
-  return point {lhs.x - rhs.x, lhs.y - rhs.y};
+    return point {lhs.x - rhs.x, lhs.y - rhs.y};
 }
 
 point& point::operator+=(const point& other)
@@ -38,7 +38,7 @@ point& point::operator-=(const point& other)
     return *this;
 }
 
-std::ostream& operator<<( std::ostream& out, const point& p )
+std::ostream& operator<<(std::ostream& out, const point& p)
 {
     out << "(" << p.x << ", " << p.y << ")";
     return out;

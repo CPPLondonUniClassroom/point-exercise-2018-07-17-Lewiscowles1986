@@ -1,5 +1,6 @@
 
 #include "point.hpp"
+#include "line.hpp"
 
 #include <cassert>
 
@@ -67,4 +68,14 @@ int main()
 
     // Test output streaming
     std::cout << point{3, 4} << '\n';
+
+    // Test line
+    {
+        line l1{{1,2},{3,4}};
+        line l2 = line();
+
+        assert(l1 == l1-l2);
+    }
+
+    std::cout << line{{2,5}, {5,2}} << '\n';
 }

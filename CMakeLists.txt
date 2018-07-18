@@ -3,4 +3,4 @@ project(week11_point_exercise)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(week11_point_exercise main.cpp point.cpp point.hpp)
+add_executable(week11_point_exercise main.cpp point.cpp point.hpp line.cpp line.hpp)

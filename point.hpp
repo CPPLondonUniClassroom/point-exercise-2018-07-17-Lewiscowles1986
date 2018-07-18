@@ -17,6 +17,6 @@ bool operator!=(const point& lhs, const point& rhs);
 point operator+(const point& lhs, const point& rhs);
 point operator-(const point& lhs, const point& rhs);
 
-std::ostream& operator<<( std::ostream& output, const point& p );
+std::ostream& operator<<(std::ostream& output, const point& p);
 
 #endif //WEEK11_POINT_EXERCISE_POINT_HPP
